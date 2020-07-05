@@ -1,0 +1,13 @@
+world
+python
+java
+
+この文章はFile_ReadWriteProccessing.pyの実行用に書かれています。
+ご覧のように、各行頭にhelloが追加されて出力されています。
+
+改行した場合はこのようになります。
+
+この
+文章は
+改行されて
+います。

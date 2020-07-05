@@ -1,0 +1,5 @@
+ReadingAndWritingJapaneseFiles.pyを実行する際にutf8.txtとsjis.txtを同じディレクトリに置いてください。（文字コード変換をします）
+
+Documentation.pyを実行する際にmymodule.pyを同じディレクトリに置いてください。（ヘルプで画面出力表示します）
+
+ExceptionClass.pyを実行する際にerror.logを同じディレクトリに置いてください。(テキスト出力します)

@@ -1,0 +1,812 @@
+{\rtf1\ansi\ansicpg932\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset128 HiraginoSans-W3;}
+{\colortbl;\red255\green255\blue255;\red59\green35\blue34;\red215\green211\blue183;}
+{\*\expandedcolortbl;;\csgenericrgb\c23317\c13541\c13291;\cssrgb\c87500\c85798\c76563;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \CocoaLigature0 <!DOCTYPE html>\
+<html lang="ja">\
+<head>\
+  \
+  \
+    <meta charset="utf-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1">\
+    <title>Top - python.jp</title>\
+  \
+\
+  <!-- include font awesome -->\
+  <link rel="stylesheet" href="static/docutils_html5/minimal.css">\
+  <link rel="stylesheet" href="static/docutils_html5/plain.css">\
+\
+  <!-- include boolstrap4 -->\
+  <link rel="stylesheet" href="static/bootstrap4/bootstrap.min.css">\
+\
+  <!-- include jquery.js -->\
+  <script src="static/jquery/jquery.min.js"></script>\
+\
+  <!-- include popper.js -->\
+  <script src="static/popper.js/popper.min.js"></script>\
+\
+  <!-- include boolstrap4 js -->\
+  <script src="static/bootstrap4/bootstrap.min.js"></script>\
+\
+  <!-- include pygments css -->\
+  <link rel="stylesheet" href="static/pygments/pygments_native.css">\
+  \
+  <!-- include font awesome -->\
+  <link rel="stylesheet" href="static/fontawesome/css/font-awesome.min.css">\
+  \
+  <!-- include 'docutils_html5 -->\
+  <link rel="stylesheet" href="static/docutils_html5/minimal.css">\
+  <link rel="stylesheet" href="static/docutils_html5/plain.css">\
+  \
+  \
+  <link href="https://www.python.jp/all.atom.xml" type="application/atom+xml" rel="alternate" title="python.jp Atom Feed" />\
+  <link href="https://www.python.jp/channews.rdf" type="application/rss+xml" rel="alternate" title="python.jp RSS Feed" />\
+\
+  <link rel="stylesheet" href="static/css/main.css">\
+\
+  <meta property="og:url" content="https://www.python.jp/index.html" />\
+<meta property="og:locale" content="ja" />\
+<meta property="og:type" content="article" />\
+\
+<meta property="og:title" content="Top - python.jp" />\
+\
+<meta name="description" content=""/>\
+<meta property="og:description" content="" />\
+\
+\
+  \
+    \
+  \
+\
+  \
+  <script>\
+    (function (i, s, o, g, r, a, m) \{\
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () \{\
+        (i[r].q = i[r].q || []).push(arguments)\
+      \}, i[r].l = 1 * new Date(); a = s.createElement(o),\
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)\
+    \})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');\
+\
+    ga('create', 'UA-34175846-1', 'auto');\
+    ga('send', 'pageview');\
+  </script>\
+  \
+\
+<script>\
+\
+var entityMap = \{\
+  '&': '&amp;',\
+  '<': '&lt;',\
+  '>': '&gt;',\
+  '"': '&quot;',\
+  "'": '&#39;',\
+  '/': '&#x2F;',\
+  '`': '&#x60;',\
+  '=': '&#x3D;'\
+\};\
+\
+function escapeHtml (string) \{\
+  return String(string).replace(/[&<>"'`=\\/]/g, function (s) \{\
+    return entityMap[s];\
+  \});\
+\}\
+\
+$(document).ready(function() \{\
+  $('.section h1, .section h2, .section h3, .section h4').hover(\
+    function() \{\
+      const elemid = escapeHtml(this.parentElement.id)\
+      const a = "<sup class='dynhashlink'><a href='#" + elemid + "'>\'b6</a></sup>"\
+      $(this).append(a)\
+    \},\
+    function() \{\
+      $(this).find(".dynhashlink").remove()\
+    \})\
+\})\
+\
+</script>\
+\
+\
+</head>\
+\
+<body>\
+  \
+<div id="fb-root"></div>\
+<script>(function(d, s, id) \{\
+  var js, fjs = d.getElementsByTagName(s)[0];\
+  if (d.getElementById(id)) return;\
+  js = d.createElement(s); js.id = id;\
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=136737689739296";\
+  fjs.parentNode.insertBefore(js, fjs);\
+\}(document, 'script', 'facebook-jssdk'));</script>\
+\
+\
+<nav class="topmenu" style="">\
+  <div class="menublock">\
+    <a href="index.html" class="menulink">\
+        \
+\
+  <img src='static/images/pyjug.png'\
+     \
+     \
+     \
+     \
+     \
+   >\
+\
+  </a>\
+    <a href='index.html' class='menulink'>Home</a>\
+    <a href='news/index.html' class='menulink'>
+\f1 \'83\'6a\'83\'85\'81\'5b\'83\'58
+\f0 </a>\
+    <a href='jobboard/index.html' class='menulink'>
+\f1 \'8b\'81\'90\'6c\'8f\'ee\'95\'f1
+\f0 </a>\
+    <a href='pages/contact.html' class='menulink'>Contact</a>\
+  </div>\
+\
+  <form method="get" action="https://google.co.jp/search" id="searchform" name="searchform"\
+          class="searchfaorm">\
+    <input type="hidden" id="domains" name="domains" value="python.jp">\
+    <input type="hidden" id="sitesearch" name="sitesearch" value="python.jp">\
+    <input type="hidden" id="sourceid" name="sourceid" value="google-search">\
+\
+    <input class="form-control" type="text" name="q" placeholder="Search">\
+    <button class="btn btn-outline-primary" style="vertical-align:baseline;" type="submit">Search</button>\
+\
+  </form>\
+</nav>\
+\
+<div class="jumbotron">\
+  \
+\
+  \
+\
+  \
+    <div class="md_header_block" id="h_%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9EPython"><a class="md_header_anchor" id="a_%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9EPython"></a><h1 class="sitetitle display-6">
+\f1 \'83\'76\'83\'8d\'83\'4f\'83\'89\'83\'7e\'83\'93\'83\'4f\'8c\'be\'8c\'ea
+\f0  Python</h1></div>\
+<div class="row">\
+<div class="col-md-4">\
+<div class="acard">\
+<div class="card-block">\
+<div class="md_header_block" id="h_Python%E3%81%A8%E3%81%AF"><a class="md_header_anchor" id="a_Python%E3%81%A8%E3%81%AF"></a><h4 class="card-title"><a href="pages/about.html">Python
+\f1 \'82\'c6\'82\'cd
+\f0 </a></h4></div>\
+<p class="card-text">
+\f1 \'83\'76\'83\'8d\'83\'4f\'83\'89\'83\'7e\'83\'93\'83\'4f\'8c\'be\'8c\'ea
+\f0  Python 
+\f1 \'82\'cc\'8a\'54\'97\'76\'82\'f0\'8f\'d0\'89\'ee\'82\'b5\'82\'dc\'82\'b7
+\f0 </p>\
+</div>\
+</div>\
+</div>\
+<div class="col-md-4">\
+<div class="acard">\
+<div class="card-block">\
+<div class="md_header_block" id="h_%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88"><a class="md_header_anchor" id="a_%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88"></a><h4 class="card-title"><a href="https://docs.python.org/ja/3/">
+\f1 \'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67
+\f0 </a></h4></div>\
+<p class="card-text">Python
+\f1 \'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67\'96\'7c\'96\'f3\'83\'76\'83\'8d\'83\'57\'83\'46\'83\'4e\'83\'67\'82\'c9\'82\'e6\'82\'e9\'98\'61\'96\'f3\'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67
+\f0 </p>\
+</div>\
+</div>\
+</div>\
+<div class="col-md-4">\
+<div class="acard">\
+<div class="card-block">\
+<div class="md_header_block" id="h_%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3"><a class="md_header_anchor" id="a_%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3"></a><h4 class="card-title"><a href="pages/community.html">
+\f1 \'83\'52\'83\'7e\'83\'85\'83\'6a\'83\'65\'83\'42
+\f0 </a></h4></div>\
+<p class="card-text">
+\f1 \'93\'fa\'96\'7b\'82\'cc
+\f0 Python
+\f1 \'83\'52\'83\'7e\'83\'85\'83\'6a\'83\'65\'83\'42
+\f0 </p>\
+</div>\
+</div>\
+</div>\
+</div>\
+<div class="row">\
+<div class="col-md-4">\
+<div class="acard">\
+<div class="card-block">\
+<div class="md_header_block" id="h_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%E3%82%AC%E3%82%A4%E3%83%89"><a class="md_header_anchor" id="a_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%E3%82%AC%E3%82%A4%E3%83%89"></a><h4 class="card-title"><a href="install/install.html">
+\f1 \'8a\'c2\'8b\'ab\'8d\'5c\'92\'7a\'83\'4b\'83\'43\'83\'68
+\f0 </a></h4></div>\
+<p class="card-text">
+\f1 \'83\'76\'83\'89\'83\'62\'83\'67\'83\'74\'83\'48\'81\'5b\'83\'80\'95\'ca\'83\'43\'83\'93\'83\'58\'83\'67\'81\'5b\'83\'8b\'83\'4b\'83\'43\'83\'68
+\f0 </p>\
+</div>\
+</div>\
+</div>\
+</div>\
+  \
+\
+\
+\
+\
+</div>\
+\
+\
+\
+<div id='content'>\
+  \
+\
+  <div class="main">\
+    <div class="row">\
+      <div class="col-md-8">\
+        \
+\
+\
+\
+\
+      <div class="body">\
+        <div class="article_summary">\
+\
+          <div class='articlle_header'> \
+            <div class="published">\
+  \
+    2019-02-27\
+  \
+</div> &nbsp;&nbsp;\
+          </div>\
+\
+          <h2 class="entry-title articles_title"><a href='news/20190227_docs_moved.html' >
+\f1 \'93\'fa\'96\'7b\'8c\'ea\'96\'f3
+\f0  Python
+\f1 \'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67\'82\'f0\'88\'da\'93\'5d\'82\'b5\'82\'dc\'82\'b5\'82\'bd
+\f0 </a></h2>\
+          <div class='article_summary_body'><p>
+\f1 \'8f\'5d\'97\'88\'81\'41
+\f0 Python
+\f1 \'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67\'82\'cc\'93\'fa\'96\'7b\'8c\'ea\'96\'f3\'82\'f0
+\f0  <a class="reference external" href="https://docs.python.jp">https://docs.python.jp</a> 
+\f1 \'82\'c5\'93\'c6\'8e\'a9\'82\'c9\'8c\'f6\'8a\'4a\'82\'b5\'82\'c4\'82\'ab\'82\'dc\'82\'b5\'82\'bd\'82\'aa\'81\'41
+\f0 <a class="reference external" href="https://www.python.org/dev/peps/pep-0545/">PEP-545 Python Documentation Translations</a> 
+\f1 \'82\'c9\'82\'e6\'82\'e8\'81\'41
+\f0 <a class="reference external" href="https://docs.python.org/ja/3/">Python.org 
+\f1 \'96\'7b\'89\'c6\'83\'54\'83\'43\'83\'67\'82\'c5\'82\'e0\'93\'fa\'96\'7b\'8c\'ea\'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67\'82\'f0\'8e\'51\'8f\'c6\'82\'c5\'82\'ab\'82\'e9
+\f0 </a> 
+\f1 \'82\'e6\'82\'a4\'82\'c9\'82\'c8\'82\'e8\'82\'dc\'82\'b5\'82\'bd\'81\'42
+\f0 </p>\
+<p>
+\f1 \'82\'b1\'82\'ea\'82\'dc\'82\'c5\'81\'41\'94\'4f\'82\'cc\'88\'d7\'82\'c6\'82\'a2\'82\'a4\'82\'b1\'82\'c6\'82\'c5
+\f0 python.jp
+\f1 \'83\'54\'83\'43\'83\'67\'82\'c5\'82\'cc\'8c\'f6\'8a\'4a\'82\'f0\'8c\'70\'91\'b1\'82\'b5\'82\'c4\'82\'ab\'82\'dc\'82\'b5\'82\'bd\'82\'aa\'81\'41\'8c\'bb\'8d\'dd\'82\'cd
+\f0 docs.python.org
+\f1 \'82\'e0\'8f\'5c\'95\'aa\'88\'c0\'92\'e8\'82\'b5\'82\'c4\'8e\'51\'8f\'c6\'82\'c5\'82\'ab\'82\'c4\'82\'a8\'82\'e8\'82\'dc\'82\'b7\'81\'42
+\f0 </p>\
+<p>
+\f1 \'82\'bb\'82\'b1\'82\'c5\'81\'41\'82\'b1\'82\'cc\'93\'78
+\f0  docs.python.jp
+\f1 \'82\'c5\'82\'cc\'8c\'f6\'8a\'4a\'82\'f0\'8f\'49\'97\'b9\'82\'b5\'81\'41
+\f0 docs.python.jp
+\f1 \'82\'d6\'82\'cc\'83\'41\'83\'4e\'83\'5a\'83\'58\'82\'cd\'81\'41\'82\'b7\'82\'d7\'82\'c4
+\f0 docs.python.org
+\f1 \'82\'d6\'83\'8a\'83\'5f\'83\'43\'83\'8c\'83\'4e\'83\'67\'82\'b7\'82\'e9\'82\'e6\'82\'a4\'82\'c9\'95\'cf\'8d\'58\'82\'b5\'82\'dc\'82\'b5\'82\'bd\'81\'42
+\f0 </p></div>\
+          <div class="article-button"><a href="news/20190227_docs_moved.html" class="btn btn-info btn-sm">
+\f1 \'82\'b7\'82\'d7\'82\'c4\'95\'5c\'8e\'a6
+\f0  ... </a>\
+          </div>\
+        </div>\
+        <hr>\
+\
+      </div>\
+\
+\
+      <div class="body">\
+        <div class="article_summary">\
+\
+          <div class='articlle_header'> \
+            <div class="published">\
+  \
+    2019-02-18\
+  \
+</div> &nbsp;&nbsp;\
+          </div>\
+\
+          <h2 class="entry-title articles_title"><a href='news/djangocongressjp2019.html' >DjangoCongress JP 2019 
+\f1 \'8a\'4a\'8d\'c3
+\f0 </a></h2>\
+          <div class='article_summary_body'><div style="margin: 40px 0px; text-align: center;">\
+<a href="https://djangocongress.jp/">\
+<img alt="DjangoCongress JP 2019" src="news/djangocongress2019.png" width="100%"/>\
+</a>\
+</div><p>2019
+\f1 \'94\'4e
+\f0 5
+\f1 \'8c\'8e
+\f0 18
+\f1 \'93\'fa\'82\'a8\'82\'e6\'82\'d1
+\f0 19
+\f1 \'93\'fa\'82\'c9\'93\'8c\'8b\'9e\'82\'c5\'81\'75
+\f0 DjangoCongress JP 2019
+\f1 \'81\'76\'82\'f0\'8a\'4a\'8d\'c3\'82\'b5\'82\'dc\'82\'b7
+\f0 !</p>\
+<p>DjangoCongress JP 2019
+\f1 \'82\'cd
+\f0 Python
+\f1 \'90\'bb
+\f0 Web
+\f1 \'83\'74\'83\'8c\'81\'5b\'83\'80\'83\'8f\'81\'5b\'83\'4e
+\f0 Django
+\f1 \'82\'f0\'83\'65\'81\'5b\'83\'7d\'82\'c9\'82\'b5\'82\'bd\'93\'fa\'96\'7b\'8d\'c5\'91\'e5\'8b\'89\'82\'cc\'83\'43\'83\'78\'83\'93\'83\'67\'82\'c5\'82\'b7\'81\'42
+\f0 \
+
+\f1 \'8b\'8e\'94\'4e\'82\'cc
+\f0 DjangoCongress JP 2018
+\f1 \'82\'c9\'91\'b1\'82\'a2\'82\'c4\'81\'41\'8d\'a1\'94\'4e\'82\'e0
+\f0 Django
+\f1 \'83\'81\'83\'43\'83\'93\'82\'cc\'83\'4a\'83\'93\'83\'74\'83\'40\'83\'8c\'83\'93\'83\'58\'82\'f0\'8a\'4a\'8d\'c3\'82\'b5\'82\'dc\'82\'b7\'81\'42
+\f0 </p>\
+<p>Django
+\f1 \'82\'cd\'93\'fa\'96\'7b\'82\'c5\'82\'e0\'97\'98\'97\'70\'8e\'d2\'82\'cc\'91\'bd\'82\'a2
+\f0 Python
+\f1 \'90\'bb
+\f0 Web
+\f1 \'83\'74\'83\'8c\'81\'5b\'83\'80\'83\'8f\'81\'5b\'83\'4e\'82\'c5\'82\'b7\'81\'42
+\f0 \
+
+\f1 \'82\'b1\'82\'cc
+\f0 Django
+\f1 \'82\'c9\'83\'65\'81\'5b\'83\'7d\'82\'f0\'83\'74\'83\'48\'81\'5b\'83\'4a\'83\'58\'82\'b7\'82\'e9\'82\'b1\'82\'c6\'82\'c5\'81\'41\'91\'bc\'82\'c5\'82\'cd\'94\'ad\'95\'5c\'82\'cc\'93\'ef\'82\'b5\'82\'a2\'93\'a5\'82\'dd\'8d\'9e\'82\'f1\'82\'be\'93\'e0\'97\'65\'82\'cc\'94\'ad\'95\'5c\'82\'e2\'8b\'63\'98\'5f\'81\'41\'8f\'ee\'95\'f1\'82\'cc\'8b\'a4\'97\'4c\'82\'aa\'82\'c5\'82\'ab\'82\'dc\'82\'b7\'81\'42
+\f0 </p></div>\
+          <div class="article-button"><a href="news/djangocongressjp2019.html" class="btn btn-info btn-sm">
+\f1 \'82\'b7\'82\'d7\'82\'c4\'95\'5c\'8e\'a6
+\f0  ... </a>\
+          </div>\
+        </div>\
+        <hr>\
+\
+      </div>\
+\
+\
+      <div class="body">\
+        <div class="article_summary">\
+\
+          <div class='articlle_header'> \
+            <div class="published">\
+  \
+    2018-10-30\
+  \
+</div> &nbsp;&nbsp;\
+          </div>\
+\
+          <h2 class="entry-title articles_title"><a href='jobboard/nii-2.html' >
+\f1 \'81\'79\'8b\'81\'90\'6c\'8f\'ee\'95\'f1\'81\'7a
+\f0  
+\f1 \'83\'49\'81\'5b\'83\'76\'83\'93\'83\'54\'83\'43\'83\'47\'83\'93\'83\'58\'8a\'ee\'94\'d5\'8c\'a4\'8b\'86\'83\'5a\'83\'93\'83\'5e\'81\'5b
+\f0  
+\f1 \'93\'c1\'94\'43\'8b\'5a\'8f\'70\'90\'ea\'96\'e5\'88\'f5\'81\'69\'93\'c1\'92\'e8\'97\'4c\'8a\'fa\'8c\'d9\'97\'70\'90\'45\'88\'f5\'81\'6a\'95\'e5\'8f\'57
+\f0 </a></h2>\
+          <div class='article_summary_body'><div style="margin: 40px 0px; text-align: center;">\
+<a href="https://www.nii.ac.jp/about/recruit/2018/1024.html">\
+<img alt="
+\f1 \'8d\'91\'97\'a7\'8f\'ee\'95\'f1\'8a\'77\'8c\'a4\'8b\'86\'8f\'8a
+\f0 " src="jobboard/nii.gif" width="80%"/>\
+</a>\
+</div><p>
+\f1 \'8d\'91\'97\'a7\'8f\'ee\'95\'f1\'8a\'77\'8c\'a4\'8b\'86\'8f\'8a\'82\'c5\'82\'cd\'81\'41\'8d\'91\'93\'e0\'8a\'4f\'82\'cc\'83\'49\'81\'5b\'83\'76\'83\'93\'83\'54\'83\'43\'83\'47\'83\'93\'83\'58\'82\'cc\'93\'ae\'8c\'fc\'82\'c9\'91\'ce\'89\'9e\'82\'b5\'81\'41\'8c\'a4\'8b\'86\'83\'66\'81\'5b\'83\'5e\'82\'f0\'93\'4b\'90\'d8\'82\'c9\'8a\'c7\'97\'9d\'81\'45\'8c\'f6\'8a\'4a\'82\'b7\'82\'e9\'82\'bd\'82\'df\'82\'cc\'83\'54\'81\'5b\'83\'72\'83\'58\'82\'f0\'8d\'91\'93\'e0\'82\'cc\'91\'e5\'8a\'77\'82\'e2\'8c\'a4\'8b\'86\'8b\'40\'8a\'d6\'82\'c9\'92\'f1\'8b\'9f\'82\'b7\'82\'e9\'82\'bd\'82\'df\'82\'c9\'81\'41\'95\'bd\'90\'ac\'82\'51\'82\'58\'94\'4e\'93\'78\'82\'e6\'82\'e8\'8c\'a4\'8b\'86\'83\'66\'81\'5b\'83\'5e\'8a\'ee\'94\'d5\'8d\'5c\'92\'7a\'82\'cc\'8e\'96\'8b\'c6\'82\'f0\'8e\'c0\'8e\'7b\'82\'b5\'82\'c4\'82\'a2\'82\'dc\'82\'b7\'81\'42
+\f0 </p>\
+<p>
+\f1 \'8a\'4a\'94\'ad\'82\'b7\'82\'e9\'8c\'a4\'8b\'86\'83\'66\'81\'5b\'83\'5e\'8a\'ee\'94\'d5\'82\'cd\'81\'41\'95\'bd\'90\'ac
+\f0 30
+\f1 \'94\'4e
+\f0 6
+\f1 \'8c\'8e
+\f0 15
+\f1 \'93\'fa\'82\'c9\'8a\'74\'8b\'63\'8c\'88\'92\'e8\'82\'b3\'82\'ea\'82\'bd\'81\'75\'93\'9d\'8d\'87\'83\'43\'83\'6d\'83\'78\'81\'5b\'83\'56\'83\'87\'83\'93\'90\'ed\'97\'aa\'81\'76\'82\'c5\'82\'e0\'82\'bb\'82\'cc\'95\'4b\'97\'76\'90\'ab\'82\'aa\'8c\'be\'8b\'79\'82\'b3\'82\'ea\'82\'c4\'82\'a8\'82\'e8\'81\'41\'8d\'91\'93\'e0\'82\'cc\'8c\'a4\'8b\'86\'82\'e2\'8e\'59\'8b\'c6\'82\'f0\'94\'ad\'93\'57\'82\'b3\'82\'b9\'82\'e9\'83\'43\'83\'6d\'83\'78\'81\'5b\'83\'56\'83\'87\'83\'93\'82\'f0\'91\'6e\'8f\'6f\'82\'b7\'82\'e9\'82\'b1\'82\'c6\'82\'f0\'96\'da\'8e\'77\'82\'b5\'82\'bd\'90\'56\'82\'b5\'82\'a2\'8a\'77\'8f\'70\'8a\'ee\'94\'d5\'82\'c5\'82\'b7\'81\'42\'83\'56\'83\'58\'83\'65\'83\'80\'82\'cc\'8f\'da\'8d\'d7\'82\'c9\'82\'c2\'82\'a2\'82\'c4\'82\'cd\'81\'41
+\f0 <a class="reference external" href="https://rcos.nii.ac.jp/">
+\f1 \'8c\'a4\'8b\'86\'83\'5a\'83\'93\'83\'5e\'81\'5b\'82\'cc\'83\'7a\'81\'5b\'83\'80\'83\'79\'81\'5b\'83\'57
+\f0 </a> 
+\f1 \'82\'f0\'82\'b2\'97\'97\'82\'ad\'82\'be\'82\'b3\'82\'a2\'81\'42
+\f0 </p>\
+<p>
+\f1 \'82\'b1\'82\'cc\'8c\'a4\'8b\'86\'83\'66\'81\'5b\'83\'5e\'8a\'ee\'94\'d5\'82\'cd\'81\'41\'91\'53\'8d\'91\'82\'cc\'91\'e5\'8a\'77\'82\'e2\'8c\'a4\'8b\'86\'8b\'40\'8a\'d6\'82\'d6\'82\'cc\'92\'f1\'8b\'9f\'82\'f0\'91\'7a\'92\'e8\'82\'b5\'82\'c4\'82\'a2\'82\'dc\'82\'b7\'81\'42\'83\'58\'83\'50\'81\'5b\'83\'89\'83\'72\'83\'8a\'83\'65\'83\'42\'82\'f0\'8a\'6d\'95\'db\'82\'b7\'82\'e9\'82\'bd\'82\'df\'82\'c9\'83\'7d\'83\'43\'83\'4e\'83\'8d\'83\'54\'81\'5b\'83\'72\'83\'58\'83\'41\'81\'5b\'83\'4c\'83\'65\'83\'4e\'83\'60\'83\'83\'81\'5b\'82\'f0\'97\'4c\'82\'b5\'81\'41
+\f0 CI/CD
+\f1 \'82\'c9\'82\'e6\'82\'e8\'8c\'70\'91\'b1\'93\'49\'82\'c9\'83\'70\'83\'75\'83\'8a\'83\'62\'83\'4e\'83\'4e\'83\'89\'83\'45\'83\'68\'8f\'e3\'82\'c9\'83\'66\'83\'76\'83\'8d\'83\'43\'82\'b3\'82\'ea\'82\'e9
+\f0 Dev/Ops
+\f1 \'82\'cc\'8e\'c0\'8c\'bb\'82\'f0\'94\'4f\'93\'aa\'82\'c9\'8a\'4a\'94\'ad\'82\'f0\'90\'69\'82\'df\'82\'c4\'82\'a2\'82\'dc\'82\'b7\'81\'42\'8d\'91\'97\'a7\'8f\'ee\'95\'f1\'8a\'77\'8c\'a4\'8b\'86\'8f\'8a\'82\'aa\'92\'f1\'8b\'9f\'82\'b7\'82\'e9\'83\'54\'81\'5b\'83\'72\'83\'58\'82\'cc\'8a\'4a\'94\'ad\'89\'5e\'97\'70\'91\'cc\'90\'a7\'82\'c6\'82\'b5\'82\'c4\'81\'41\'92\'a7\'90\'ed\'93\'49\'82\'c8\'8e\'e6\'82\'e8\'91\'67\'82\'dd\'82\'c6\'82\'c8\'82\'e8\'82\'dc\'82\'b7\'81\'42
+\f0 </p></div>\
+          <div class="article-button"><a href="jobboard/nii-2.html" class="btn btn-info btn-sm">
+\f1 \'82\'b7\'82\'d7\'82\'c4\'95\'5c\'8e\'a6
+\f0  ... </a>\
+          </div>\
+        </div>\
+        <hr>\
+\
+      </div>\
+\
+\
+      <div class="body">\
+        <div class="article_summary">\
+\
+          <div class='articlle_header'> \
+            <div class="published">\
+  \
+    2018-07-13\
+  \
+</div> &nbsp;&nbsp;\
+          </div>\
+\
+          <h2 class="entry-title articles_title"><a href='jobboard/nii.html' >
+\f1 \'81\'79\'8b\'81\'90\'6c\'8f\'ee\'95\'f1\'81\'7a
+\f0  
+\f1 \'83\'49\'81\'5b\'83\'76\'83\'93\'83\'54\'83\'43\'83\'47\'83\'93\'83\'58\'8a\'ee\'94\'d5\'8c\'a4\'8b\'86\'83\'5a\'83\'93\'83\'5e\'81\'5b
+\f0  
+\f1 \'93\'c1\'94\'43\'8b\'5a\'8f\'70\'90\'ea\'96\'e5\'88\'f5\'81\'69\'93\'c1\'92\'e8\'97\'4c\'8a\'fa\'8c\'d9\'97\'70\'90\'45\'88\'f5\'81\'6a\'95\'e5\'8f\'57
+\f0 </a></h2>\
+          <div class='article_summary_body'><div style="margin: 40px 0px; text-align: center;">\
+<a href="https://www.nii.ac.jp/about/recruit/2018/0709-2.html">\
+<img alt="
+\f1 \'8d\'91\'97\'a7\'8f\'ee\'95\'f1\'8a\'77\'8c\'a4\'8b\'86\'8f\'8a
+\f0 " src="jobboard/nii.gif" width="80%"/>\
+</a>\
+</div><p>
+\f1 \'8d\'91\'97\'a7\'8f\'ee\'95\'f1\'8a\'77\'8c\'a4\'8b\'86\'8f\'8a\'82\'c5\'82\'cd\'81\'41\'8c\'a4\'8b\'86\'83\'66\'81\'5b\'83\'5e\'82\'f0\'93\'4b\'90\'d8\'82\'c9\'8a\'c7\'97\'9d\'81\'45\'89\'5e\'97\'70\'82\'b7\'82\'e9\'82\'bd\'82\'df\'82\'cc\'83\'54\'81\'5b\'83\'72\'83\'58\'82\'f0\'8d\'91\'93\'e0\'82\'cc\'91\'e5\'8a\'77\'82\'e2\'8c\'a4\'8b\'86\'8b\'40\'8a\'d6\'82\'c9\'92\'f1\'8b\'9f\'82\'b7\'82\'e9\'82\'bd\'82\'df\'82\'c9\'81\'41\'95\'bd\'90\'ac
+\f0 29
+\f1 \'94\'4e\'93\'78\'82\'e6\'82\'e8\'8c\'a4\'8b\'86\'83\'66\'81\'5b\'83\'5e\'8a\'ee\'94\'d5\'8d\'5c\'92\'7a\'82\'cc\'8e\'96\'8b\'c6\'82\'f0\'8e\'c0\'8e\'7b\'82\'b5\'82\'c4\'82\'a2\'82\'dc\'82\'b7\'81\'42
+\f0 </p>\
+<p>
+\f1 \'8a\'4a\'94\'ad\'82\'b7\'82\'e9\'8c\'a4\'8b\'86\'83\'66\'81\'5b\'83\'5e\'8a\'ee\'94\'d5\'82\'cd\'81\'41\'95\'bd\'90\'ac
+\f0 30
+\f1 \'94\'4e
+\f0 6
+\f1 \'8c\'8e
+\f0 15
+\f1 \'93\'fa\'82\'c9\'8a\'74\'8b\'63\'8c\'88\'92\'e8\'82\'b3\'82\'ea\'82\'bd\'81\'75\'93\'9d\'8d\'87\'83\'43\'83\'6d\'83\'78\'81\'5b\'83\'56\'83\'87\'83\'93\'90\'ed\'97\'aa\'81\'76\'82\'c5\'82\'e0\'82\'bb\'82\'cc\'95\'4b\'97\'76\'90\'ab\'82\'aa\'8c\'be\'8b\'79\'82\'b3\'82\'ea\'82\'c4\'82\'a8\'82\'e8\'81\'41\'8d\'91\'93\'e0\'82\'cc\'8c\'a4\'8b\'86\'82\'e2\'8e\'59\'8b\'c6\'82\'f0\'94\'ad\'93\'57\'82\'b3\'82\'b9\'82\'e9\'83\'43\'83\'6d\'83\'78\'81\'5b\'83\'56\'83\'87\'83\'93\'82\'f0\'91\'6e\'8f\'6f\'82\'b7\'82\'e9\'82\'b1\'82\'c6\'82\'f0\'96\'da\'8e\'77\'82\'b5\'82\'bd\'90\'56\'82\'b5\'82\'a2\'8a\'77\'8f\'70\'8a\'ee\'94\'d5\'82\'c5\'82\'b7\'81\'42\'83\'56\'83\'58\'83\'65\'83\'80\'82\'cc\'8f\'da\'8d\'d7\'82\'c9\'82\'c2\'82\'a2\'82\'c4\'82\'cd\'81\'41\'8c\'a4\'8b\'86\'83\'5a\'83\'93\'83\'5e\'81\'5b\'82\'cc\'83\'7a\'81\'5b\'83\'80\'83\'79\'81\'5b\'83\'57\'82\'f0\'82\'b2\'97\'97\'82\'ad\'82\'be\'82\'b3\'82\'a2\'81\'42
+\f0 </p>\
+<p>
+\f1 \'82\'b1\'82\'cc\'8c\'a4\'8b\'86\'83\'66\'81\'5b\'83\'5e\'8a\'ee\'94\'d5\'82\'cd\'81\'41\'91\'53\'8d\'91\'82\'cc\'91\'e5\'8a\'77\'82\'e2\'8c\'a4\'8b\'86\'8b\'40\'8a\'d6\'82\'d6\'82\'cc\'92\'f1\'8b\'9f\'82\'f0\'91\'7a\'92\'e8\'82\'b5\'82\'c4\'82\'a2\'82\'dc\'82\'b7\'81\'42\'83\'58\'83\'50\'81\'5b\'83\'89\'83\'72\'83\'8a\'83\'65\'83\'42\'82\'f0\'8a\'6d\'95\'db\'82\'b7\'82\'e9\'82\'bd\'82\'df\'82\'c9\'83\'7d\'83\'43\'83\'4e\'83\'8d\'83\'54\'81\'5b\'83\'72\'83\'58\'83\'41\'81\'5b\'83\'4c\'83\'65\'83\'4e\'83\'60\'83\'83\'81\'5b\'82\'f0\'97\'4c\'82\'b5\'81\'41
+\f0 CI/CD
+\f1 \'82\'c9\'82\'e6\'82\'e8\'8c\'70\'91\'b1\'93\'49\'82\'c9\'83\'70\'83\'75\'83\'8a\'83\'62\'83\'4e\'83\'4e\'83\'89\'83\'45\'83\'68\'8f\'e3\'82\'c9\'83\'66\'83\'76\'83\'8d\'83\'43\'82\'b3\'82\'ea\'82\'e9
+\f0 Dev/Ops
+\f1 \'82\'cc\'8e\'c0\'8c\'bb\'82\'f0\'94\'4f\'93\'aa\'82\'c9\'8a\'4a\'94\'ad\'82\'f0\'90\'69\'82\'df\'82\'c4\'82\'a2\'82\'dc\'82\'b7\'81\'42\'81\'40\'8d\'91\'97\'a7\'8f\'ee\'95\'f1\'8a\'77\'8c\'a4\'8b\'86\'8f\'8a\'82\'aa\'92\'f1\'8b\'9f\'82\'b7\'82\'e9\'83\'54\'81\'5b\'83\'72\'83\'58\'82\'cc\'8a\'4a\'94\'ad\'89\'5e\'97\'70\'91\'cc\'90\'a7\'82\'c6\'82\'b5\'82\'c4\'81\'41\'92\'a7\'90\'ed\'93\'49\'82\'c8\'8e\'e6\'82\'e8\'91\'67\'82\'dd\'82\'c6\'82\'c8\'82\'e8\'82\'dc\'82\'b7\'81\'42
+\f0 </p></div>\
+          <div class="article-button"><a href="jobboard/nii.html" class="btn btn-info btn-sm">
+\f1 \'82\'b7\'82\'d7\'82\'c4\'95\'5c\'8e\'a6
+\f0  ... </a>\
+          </div>\
+        </div>\
+        <hr>\
+\
+      </div>\
+\
+\
+      <div class="body">\
+        <div class="article_summary">\
+\
+          <div class='articlle_header'> \
+            <div class="published">\
+  \
+    2018-05-23\
+  \
+</div> &nbsp;&nbsp;\
+          </div>\
+\
+          <h2 class="entry-title articles_title"><a href='news/wakarupython.html' >
+\f1 \'82\'ed\'82\'a9\'82\'e9
+\f0 Python
+\f1 \'81\'6d\'8c\'88\'92\'e8\'94\'c5\'81\'6e
+\f0 </a></h2>\
+          <div class='article_summary_body'><div style="margin: 40px 0px; text-align: center;">\
+<a href="http://www.sbcr.jp/products/4797395440.html">\
+<img src="news/wakarupython.jpg" width="80%"/>\
+</a>\
+</div><dl class="simple">\
+<dt>
+\f1 \'8f\'6f\'94\'c5\'93\'fa
+\f0 </dt>\
+<dd><p>2018
+\f1 \'94\'4e
+\f0 5
+\f1 \'8c\'8e
+\f0 22
+\f1 \'93\'fa
+\f0 </p>\
+</dd>\
+<dt>URL</dt>\
+<dd><p><a class="reference external" href="http://www.sbcr.jp/products/4797395440.html">http://www.sbcr.jp/products/4797395440.html</a></p>\
+</dd>\
+<dt>
+\f1 \'92\'98\'8e\'d2
+\f0 </dt>\
+<dd><p>
+\f1 \'8f\'bc\'89\'59
+\f0  
+\f1 \'8c\'92\'88\'ea\'98\'59
+\f0  / 
+\f1 \'8e\'69
+\f0  
+\f1 \'82\'e4\'82\'ab
+\f0 </p>\
+</dd>\
+</dl>\
+<div class="section" id="id1">\
+<div class="md_header_block" id="h_%E6%9C%AC%E6%9B%B8%E3%81%AE%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88"><a class="md_header_anchor" id="a_%E6%9C%AC%E6%9B%B8%E3%81%AE%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88"></a><h1>
+\f1 \'81\'79\'96\'7b\'8f\'91\'82\'cc\'83\'7c\'83\'43\'83\'93\'83\'67\'81\'7a
+\f0 </h1></div>\
+<ul>\
+<li><p>Python
+\f1 \'8f\'89\'90\'53\'8e\'d2\'82\'c9\'8a\'77\'82\'f1\'82\'c5\'97\'7e\'82\'b5\'82\'a2\'95\'b6\'96\'40\'82\'f0\'89\'df\'95\'73\'91\'ab\'82\'c8\'82\'ad\'8c\'66\'8d\'da\'81\'49
+\f0 </p>\
+<p>
+\f1 \'91\'bd\'82\'ad\'82\'cc\'8d\'80\'96\'da\'82\'c9\'82\'c2\'82\'a2\'82\'c4\'81\'41\'97\'fb\'8f\'4b\'96\'e2\'91\'e8\'82\'f0\'8c\'66\'8d\'da\'82\'b5\'82\'c4\'82\'a8\'82\'e8\'81\'41\'93\'c7\'82\'de\'82\'be\'82\'af\'82\'c5\'82\'cd\'82\'c8\'82\'ad\'8e\'c0\'8d\'db\'82\'c9\'83\'52\'81\'5b\'83\'68\'82\'f0\'8f\'91\'82\'ad\'82\'b1\'82\'c6\'82\'c5\'82\'e6\'82\'e8\'90\'5b\'82\'ad
+\f0 Python
+\f1 \'82\'cc\'97\'9d\'89\'f0\'82\'f0\'82\'b7\'82\'e9\'82\'b1\'82\'c6\'82\'aa\'82\'c5\'82\'ab\'82\'dc\'82\'b7\'81\'42
+\f0 </p>\
+</li>\
+<li><p>
+\f1 \'96\'4c\'95\'78\'82\'c8\'83\'54\'83\'93\'83\'76\'83\'8b\'8f\'57
+\f0 </p>\
+<p>
+\f1 \'8b\'40\'8a\'42\'8a\'77\'8f\'4b\'81\'41\'83\'66\'83\'42\'81\'5b\'83\'76\'83\'89\'81\'5b\'83\'6a\'83\'93\'83\'4f\'81\'41\'89\'c8\'8a\'77\'8b\'5a\'8f\'70\'8c\'76\'8e\'5a\'82\'c6\'82\'a2\'82\'c1\'82\'bd\'81\'41
+\f0 Python
+\f1 \'82\'aa\'82\'e6\'82\'ad\'97\'98\'97\'70\'82\'b3\'82\'ea\'82\'c4\'82\'a2\'82\'e9\'95\'aa\'96\'ec\'82\'c9\'82\'c2\'82\'a2\'82\'c4\'82\'cc\'89\'f0\'90\'e0\'82\'f0\'8c\'66\'8d\'da\'82\'b5\'82\'c4\'82\'a2\'82\'dc\'82\'b7\'81\'42
+\f0 </p>\
+<p>
+\f1 \'82\'a2\'82\'eb\'82\'a2\'82\'eb\'82\'c8\'95\'aa\'96\'ec\'82\'cc\'83\'54\'83\'93\'83\'76\'83\'8b\'83\'52\'81\'5b\'83\'68\'82\'f0\'93\'ae\'82\'a9\'82\'b7\'82\'b1\'82\'c6\'82\'be\'82\'af\'82\'c5\'82\'c8\'82\'ad\'81\'41\'8b\'40\'8a\'42\'8a\'77\'8f\'4b\'82\'c8\'82\'c7\'82\'cc\'97\'9d\'98\'5f\'82\'cc\'8a\'54\'97\'76\'82\'f0\'92\'6d\'82\'e8\'82\'bd\'82\'a2\'95\'fb\'82\'c9\'82\'e0\'83\'49\'83\'58\'83\'58\'83\'81\'82\'c5\'82\'b7\'81\'42
+\f0 </p></li></ul></div></div>\
+          <div class="article-button"><a href="news/wakarupython.html" class="btn btn-info btn-sm">
+\f1 \'82\'b7\'82\'d7\'82\'c4\'95\'5c\'8e\'a6
+\f0  ... </a>\
+          </div>\
+        </div>\
+        <hr>\
+\
+      </div>\
+\
+\
+  <div class="index-pagination">\
+    \
+      <span class="index-navi index-disabled-link">&Lang;</span>\
+      <span class="index-navi index-disabled-link">&lang;</span>\
+    \
+\
+    \
+    \
+    \
+    \
+      \
+    \
+\
+    \
+\
+    \
+      \
+        <span class="index-navi index-disabled-link">1</span>\
+      \
+    \
+      \
+        <a class="index-navi"\
+          href="index_2.html">2</a>\
+      \
+    \
+      \
+        <a class="index-navi"\
+          href="index_3.html">3</a>\
+      \
+    \
+      \
+        <a class="index-navi"\
+          href="index_4.html">4</a>\
+      \
+    \
+      \
+        <a class="index-navi"\
+          href="index_5.html">5</a>\
+      \
+    \
+\
+    \
+       
+\f1 \'81\'45\'81\'45\'81\'45
+\f0 \
+    \
+\
+    \
+      <a class="index-navi"\
+         href="index_2.html">&rang;</a>\
+      <a class="index-navi"\
+         href="index_15.html">&Rang;</a>\
+    \
+  </div>\
+\
+\
+\
+\
+      </div>\
+\
+      <div class="col-md-4">\
+\
+        \
+  \
+   \
+            <div class="card right-box">\
+    <div class="card-block">\
+      <div class="card-title">\
+        <h2>
+\f1 \'96\'7c\'96\'f3\'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67
+\f0 </h2>\
+      </div>\
+\
+      <div class="ibox center">\
+        <a href="https://docs.python.org/ja/3/"\
+            class="btn btn-primary btn-lg"> Python 3</a>\
+      </div>\
+\
+      <div class="ibox center">\
+        <a href="https://docs.python.org/ja/2.7/"\
+            class="btn btn-primary btn-lg"> Python 2</a>\
+      </div>\
+\
+      <div class="card-title">\
+        <h2>
+\f1 \'83\'5f\'83\'45\'83\'93\'83\'8d\'81\'5b\'83\'68
+\f0 </h2>\
+      </div>\
+\
+      <div class="ibox center">\
+        <a href="https://www.python.org/downloads/release/python-372/"\
+            class="btn btn-primary btn-lg"> Python 3.7.2</a><br>\
+            <small> 2018-12-24</small>\
+      </div>\
+\
+      <div class="ibox center">\
+        <a href="https://www.python.org/downloads/release/python-2715/"\
+            class="btn btn-primary btn-lg"> Python 2.7.15</a><br>\
+            <small>2018-05-01</small>\
+      </div>\
+    </div>\
+  </div>\
+\
+\
+\
+  <div class="card right-box">\
+    <div class="card-block">\
+      <div class="card-title">\
+        <h2>
+\f1 \'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67\'96\'7c\'96\'f3\'83\'76\'83\'8d\'83\'57\'83\'46\'83\'4e\'83\'67
+\f0 </h2>\
+      </div>\
+\
+      <p>\
+        Python
+\f1 \'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67\'96\'7c\'96\'f3\'82\'b7\'82\'e9\'83\'76\'83\'8d\'83\'57\'83\'46\'83\'4e\'83\'67\'82\'cd\'81\'41
+\f0  
+\f1 \'8c\'bb\'8d\'dd\'81\'41
+\f0 Python 3.7 
+\f1 \'82\'cc\'83\'68\'83\'4c\'83\'85\'83\'81\'83\'93\'83\'67\'82\'c9\'91\'ce\'89\'9e\'82\'b7\'82\'e9\'82\'bd\'82\'df\'82\'c9\'8a\'88\'93\'ae\'92\'86\'82\'c5\'82\'b7\'81\'42
+\f0 \
+      </p>\
+      <div style="text-align:right">\
+        <a href="https://github.com/python-doc-ja/python-doc-ja" class="btn btn-primary btn-lg card-link">
+\f1 \'8f\'da\'82\'b5\'82\'ad\'8c\'a9\'82\'e9
+\f0 </a>\
+      </div>\
+    </div>\
+  </div>\
+\
+\
+\
+<div class="card right-box">\
+  <div class="card-block">\
+    <div class="card-title">\
+      <h2>Python.jp Discord
+\f1 \'83\'54\'81\'5b\'83\'6f
+\f0 </h2>\
+    </div>\
+    <p>\
+      <a href='https://discordapp.com/'>Discord</a> 
+\f1 \'82\'c9\'82\'e6\'82\'e9\'83\'60\'83\'83\'83\'62\'83\'67\'83\'54\'81\'5b\'83\'72\'83\'58\'82\'c5\'82\'b7\'81\'42\'8f\'ee\'95\'f1\'8c\'f0\'8a\'b7\'81\'45\'8e\'bf\'96\'e2\'81\'45\'8e\'47\'92\'6b\'82\'c8\'82\'c7\'82\'c9\'82\'b2\'97\'98\'97\'70\'82\'ad\'82\'be\'82\'b3\'82\'a2\'81\'42
+\f0 \
+    </p>\
+    <div style="text-align:right">\
+      <a href='pages/pythonjp_discord.html' class='btn btn-primary btn-lg card-link'>
+\f1 \'8f\'da\'82\'b5\'82\'ad\'8c\'a9\'82\'e9
+\f0 </a>\
+    </div>\
+\
+  </div>\
+</div>\
+\
+<div class="card right-box">\
+  <div class="card-block">\
+      <h2><a href='https://twitter.com/python_japan/'><i class="fa fa-twitter" aria-hidden="true"></i> python_japan</a>\
+</h2>\
+  </div>\
+</div>\
+\
+\
+<div class="card right-box">\
+  <div class="card-block">\
+    
+\f1 \'8b\'81\'90\'6c\'8f\'ee\'95\'f1\'81\'45\'83\'6a\'83\'85\'81\'5b\'83\'58\'81\'45\'83\'43\'83\'78\'83\'93\'83\'67\'8d\'90\'92\'6d\'82\'c8\'82\'c7\'81\'41
+\f0 Python
+\f1 \'8a\'d6\'98\'41\'8f\'ee\'95\'f1\'82\'cc\'8c\'66\'8d\'da\'82\'f0\'82\'b2\'8a\'f3\'96\'5d\'82\'cc\'95\'fb\'82\'cd\'81\'41
+\f0  <code>contact@python.jp</code>\
+    
+\f1 \'82\'dc\'82\'c5\'82\'b2\'98\'41\'97\'8d\'82\'ad\'82\'be\'82\'b3\'82\'a2\'81\'42\'8f\'ee\'95\'f1\'8c\'66\'8d\'da\'82\'cd\'91\'53\'82\'c4\'96\'b3\'97\'bf\'82\'c5\'82\'b7\'81\'42
+\f0 \
+  </div>\
+</div>         \
+        \
+\
+  <div style="margin-left: 16px;">\
+  <iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;hl=ja&amp;bgcolor=%23FFFFFF&amp;src=kj670le78ju5alcbt1khect5ks%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Asia%2FTokyo" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no">\
+    <a href="http://www.google.com/calendar/ical/kj670le78ju5alcbt1khect5ks%40group.calendar.google.com/public/basic.ics">\
+      Python Calendar Japan\
+    </a>\
+  </iframe>\
+  </div>\
+\
+\
+\
+      </div>\
+    </div>\
+  </div>\
+  \
+</div>\
+\
+\
+\
+<div id="contentinfo" class="body">\
+  <a href='pages/contact.html' >
+\f1 \'81\'79
+\f0 Copyright \'a9 2001-2018 python.jp
+\f1 \'81\'7a
+\f0 </a> <a href='pages/privacy.html' >
+\f1 \'81\'79
+\f0 Privacy Policy
+\f1 \'81\'7a
+\f0 </a>  \
+\
+  <a href='https://twitter.com/python_japan/'><i class="fa fa-twitter" aria-hidden="true"></i> python_japan</a>\
+</div>\
+<!-- /#contentinfo -->\
+\
+<script>!function(d,s,id)\{var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))\{js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);\}\}(document, 'script', 'twitter-wjs');</script>\
+\
+\
+<script type="text/javascript">!function(d,i)\{if(!d.getElementById(i))\{var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);\}\}(document,"pocket-btn-js");</script>\
+\
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>\
+\
+\
+\
+\
+<div class="modal fade" id="imagemodal">\
+  <div class="modal-dialog">\
+    <div class="modal-content" data-dismiss="modal">\
+      <div class="modal-body">\
+        <button type="button" class="close" data-dismiss="modal">\
+            &times;\
+        </button><br>\
+        <img src="" id=enlargeimage>\
+      </div>\
+    </div>\
+  </div>\
+</div>\
+\
+\
+<script>\
+$(function() \{\
+  $(".enlarge_img").on("click", function(e) \{\
+    let img = $(e.currentTarget).children('img')[0];\
+    $('#enlargeimage').attr('src', img.src);\
+    $('#imagemodal').modal('show');\
+    e.preventDefault();\
+  \});\
+\})\
+</script>\
+\
+\
+\
+</body>\
+</html>\
+}
